@@ -1,0 +1,232 @@
+/*
+body : give a element for body to relevent postiion for scrollypy to work.
+-add a font family for whole page*/
+body {
+    font-family: 'Sofia'; font-size: 22px;
+}
+/*set the video as background , and make it fixed.
+-make sure it seems behind all seens
+-make it spred across the whole page
+*/
+#bgvideo{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -100;
+}
+/*hide the video for small screen*/
+@media (max-width:768px){
+    body{
+                background: url(https://static.pexels.com/photos/9149/pexels-photo.jpeg) center center fixed;
+        background-size: cover;
+    }
+    #bgvideo{
+        display: none;
+    }
+}
+/*style the home section and element inside it*/
+#home{
+	background-color: transparent;
+	color: #fff;
+	text-align: center;
+	padding-top: 15%;
+}
+#home h1{
+	margin-bottom: 30px; 	
+}
+#home h2{
+	margin-bottom: 50px;
+}
+#home .btn{
+	background-color: rgb(206, 163, 204);
+	color: #fff;
+	font-size: 24px;
+	padding: 8px 20px;
+	border-radius: 18px; 	
+}
+#home .btn:hover{
+	background-color: rgb(122, 91, 120);
+	color: #fff;
+	font-size: 24px;
+	padding: 8px 20px;
+	border-radius: 18px; 	
+}
+/*style the  about section
+*/
+#about{
+	color: #fff;
+	text-align: center;
+	padding-top: 100px;
+}
+#about h1{
+	fonnt-weight:bold;
+}
+#about p{
+	font-size: 17px;
+	margin-bottom: 30px;
+}
+.aboutImage{
+	height: 120px;
+}
+/*style the size of the pictures*/
+
+
+/*style the navigation bar using nav bar css genralization*/
+.navbar-custom {
+	font-size: 18px;
+  background-color: #a07caa;
+  border-color: #91689d;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#b69bbe), to(#a07caa));
+  background-image: -webkit-linear-gradient(top, #b69bbe, 0%, #a07caa, 100%);
+  background-image: -moz-linear-gradient(top, #b69bbe 0%, #a07caa 100%);
+  background-image: linear-gradient(to bottom, #b69bbe 0%, #a07caa 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb69bbe', endColorstr='#ffa07caa', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+  color: #fff;
+}
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #010101;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #1f1616;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #91689d;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #1f1616;
+  border-left: 1px solid #91689d;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #ecdede;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #ecdede;
+  background-color: #91689d;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#91689d), to(#a887b1));
+  background-image: -webkit-linear-gradient(top, #91689d, 0%, #a887b1, 100%);
+  background-image: -moz-linear-gradient(top, #91689d 0%, #a887b1 100%);
+  background-image: linear-gradient(to bottom, #91689d 0%, #a887b1 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff91689d', endColorstr='#ffa887b1', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #90669c;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #ecdede;
+  border-bottom-color: #ecdede;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #91689d;
+  color: #ecdede;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #ecdede;
+  border-bottom-color: #ecdede;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #1f1616;
+  border-bottom-color: #1f1616;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #1f1616;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecdede;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecdede;
+    background-color: #91689d;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #1f1616;
+}
+.navbar-custom .navbar-link:hover {
+  color: #ecdede;
+}
+/*
+ style the promice section 
+*/
+
+
+#promise{
+    padding-top: 100px;
+}
+#myCarousel{
+    width: 70%;
+    margin: 0 auto;
+/*    text-align: center;*/
+}
+
+.carousel-inner .item img{
+    height: 400px;
+    margin: 0 auto;
+}
+
+.carousel-caption{
+    position: relative;
+    left: auto;
+    right: auto;
+    height: 200px;
+    
+}
+/*style the picture that can chang there height */
+
+@media (max-width:768px){
+    .carousel-inner .item img{
+        height: 200px;
+    }
+    .carousel-inner h2{
+        font-size: 17px;
+    }
+    .navbar-custom .navbar-brand{
+        font-size: 12px;
+    }
+}
+
+
+
